@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <title>Drag & Drop API</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <form id="todo-form">
+          <input type="text" placeholder="New TODO..." id="todo-input" />
+          <button type="submit">Add +</button>
+        </form>
+      <!-- <form id="todo-form">
+        <button type="submit">Delete -</button>
+      </form> -->
+</div>
+      <div class="boxs">
+        <div class="box" id="todo-lane">
+          <h3 class="heading">TODO</h3>
+
+          <p class="task" draggable="true">Get groceries </p>
+          <p class="task" draggable="true">Feed the dogs</p>
+          <p class="task" draggable="true">Mow the lawn</p>
+        </div>
+
+        <div class="box done" id="done-lane">
+          <h3 class="heading">Done</h3>
+          <a id="btnDeleteAll" href="#">	
+						Delete All
+					</a>
+          <p class="task " id="taskdell" draggable="true">
+            Watch video of a man raising a grocery store lobster as a pet
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="drag.js" defer></script>
+  <script src="script.js" defer></script>
+</html>
